@@ -8,12 +8,12 @@ import product from '@/sanity/product';
 const getProducts = async () => {
   const query = '*[_type == "product"]';
   const products = await client.fetch(query).then((products) => {
-    console.log(products);
+    // console.log(products);
     return products;
   });
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery).then((bannerData) => {
-    console.log(bannerData);
+    // console.log(bannerData);
     return bannerData;
   });
 
